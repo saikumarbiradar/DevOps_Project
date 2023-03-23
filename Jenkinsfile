@@ -8,7 +8,10 @@ pipeline{
         }
         stage( 'build' ){
             steps{
-                sh "date +%d-%m-%y" 
+                sh '''
+                "date +%d-%m-%y"
+                echo "This is saikumar"
+                '''
             }
         }
     }
